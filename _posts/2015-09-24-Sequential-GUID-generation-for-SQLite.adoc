@@ -1,5 +1,6 @@
 = Sequential GUID generation for SQLite
 :hp-tags: SQLite, Sequential, GUID
+:published_at: 2015-09-24
 
 *Requires at least SQLite 3.8.3 or greater*
 
