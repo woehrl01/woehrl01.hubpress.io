@@ -1,10 +1,8 @@
 = Impressum
 :published_at: 2015-01-01
 
-Lukas Wöhrl
-
-Schlangenweg 4
-
+Lukas Wöhrl +
+Schlangenweg 4 +
 34117 Kassel
 
 E-Mail: lukas@woehrl.net
