@@ -8,7 +8,7 @@ Can be used in DEFAULT expression (remember to suround with `()` parenthesis )
 
 Based on an idea from link:http://www.codeproject.com/Articles/388157/GUIDs-as-fast-primary-keys-under-multiple-database[Code Project: GUIDs as fast primary keys]
 
-```sql
+```
 select
 
    substr(printf('%014X', (strftime('%s', 'now') * 1000 + substr(strftime('%f','now'), 4, 3))), 3, 8)
