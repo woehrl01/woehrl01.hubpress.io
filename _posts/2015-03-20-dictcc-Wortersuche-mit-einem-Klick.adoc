@@ -1,4 +1,4 @@
-= dict.cc - direct search
+= dict.cc Wörtersuche mit einem Klick
 :published_at: 2015-03-20
 
 
