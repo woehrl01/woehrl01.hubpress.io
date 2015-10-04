@@ -1,9 +1,12 @@
 = Sequential GUID generation for SQLite
 :hp-tags: SQLite, Sequential, GUID
 
+*Requires at least SQLite 3.8.3 or greater*
 
-Can be used in DEFAULT expression (remember to suround with "()" )
-see http://www.codeproject.com/Articles/388157/GUIDs-as-fast-primary-keys-under-multiple-database
+
+Can be used in DEFAULT expression (remember to suround with `()` parenthesis )
+
+Based on an idea from link:http://www.codeproject.com/Articles/388157/GUIDs-as-fast-primary-keys-under-multiple-database[Code Project: GUIDs as fast primary keys]
 
 ```sql
 select
@@ -20,9 +23,10 @@ from sqlite_master
 ```
 
 == Hint: 
-"The 'now' argument to date and time functions always returns exactly the same 
-value for multiple invocations within the same sqlite3_step() call"
-
+____
+The `'now'` argument to date and time functions always returns exactly the same 
+value for multiple invocations within the same `sqlite3_step()` call
+____
 see: https://www.sqlite.org/lang_datefunc.html
 
 This can be problematic (because of using the same exact same time) if you fill a table with a 
@@ -30,6 +34,8 @@ recursive call, or other special cases. But should be compensated due to using r
 
 
 see also: https://msdn.microsoft.com/en-us/library/system.datetime.utcnow
-"Windows NT 3.5 and later have a aproximate resolution of 10 milliseconds"
+____
+Windows NT 3.5 and later have a aproximate resolution of 10 milliseconds
+____
 
 Which leads to a similar behaviour (kind of) in the implementation of the code project article
