@@ -42,4 +42,6 @@ ____
 Windows NT 3.5 and later have a aproximate resolution of 10 milliseconds
 ____
 
-Which leads to a similar behaviour (kind of) in the implementation of the code project article
+Which leads to a similar behaviour (kind of) in the implementation of the code project article.
+
+You can find the code also as a link:https://gist.github.com/woehrl01/ee1e35789067e00ddc8e[Github Gist].
