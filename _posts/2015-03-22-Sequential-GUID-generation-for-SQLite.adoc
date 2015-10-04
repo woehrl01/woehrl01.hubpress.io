@@ -28,7 +28,7 @@ The snipped can also be used in a table creation script in the `DEAULT` expressi
 
 === Some notes: 
 
-It is not a link:https://www.ietf.org/rfc/rfc4122.txt[true GUID]
+It is link:https://www.ietf.org/rfc/rfc4122.txt[not a true GUID].
 
 ____
 The `'now'` argument to date and time functions always returns exactly the same 
