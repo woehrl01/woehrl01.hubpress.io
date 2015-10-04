@@ -1,4 +1,4 @@
-= Sequential GUID generation for SQLite (3.8.3 or greater)
+= Sequential GUID generation for SQLite
 :hp-tags: SQLite, Sequential, GUID
 
 
