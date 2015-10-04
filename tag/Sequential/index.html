@@ -5,73 +5,141 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title>woehrl.NET - Blog</title>
-    <meta name="description" content="Backend Software Engineer (C++/C#)" />
 
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link rel="shortcut icon" href="//blog.woehrl.net/themes/Casper/favicon.ico">
+    <meta name="description" content="Backend Software Engineer (C++/C#)">
 
-    <link rel="stylesheet" type="text/css" href="//blog.woehrl.net/themes/Casper/assets/css/screen.css?v=1.0.0" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="woehrl.NET - Blog">
+    <meta name="twitter:description" content="Backend Software Engineer (C++/C#)">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="woehrl.NET - Blog">
+    <meta property="og:description" content="Backend Software Engineer (C++/C#)">
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+
+    <link rel="stylesheet" type="text/css" href="//blog.woehrl.net/themes/uno/assets/css/uno.css?v=1.0.0" />
 
     <link rel="canonical" href="http://blog.woehrl.net" />
     <meta name="generator" content="Ghost ?" />
     <link rel="alternate" type="application/rss+xml" title="woehrl.NET - Blog" href="http://blog.woehrl.net/rss" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
-</head>
-<body class="tag-template tag-Sequential home-template">
 
+</head>
+<body class="tag-template tag-Sequential home-template no-js">
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    <header class="panel-cover  " >
+      <div class="panel-main">
     
-<header class="main-header tag-head " style="background-image: url(https://avatars2.githubusercontent.com/u/2535856?v=3&amp;s=460)">
-    <nav class="main-nav overlay clearfix">
-        <a class="back-button icon-arrow-left" href="http://blog.woehrl.net">Home</a>
-        <!-- <a class="subscribe-button icon-feed" href="http://blog.woehrl.net/tag/Sequential/rss/">Sequential</a> -->
-    </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">Sequential</h1>
-            <h2 class="page-description">
-                    A 1-post collection
-            </h2>
+        <div class="panel-main__inner panel-inverted">
+        <div class="panel-main__content">
+    
+            <h1 class="panel-cover__title panel-title"><a href="http://blog.woehrl.net" title="link to homepage for woehrl.NET - Blog">woehrl.NET - Blog</a></h1>
+            <hr class="panel-cover__divider" />
+            <p class="panel-cover__description">Backend Software Engineer (C++/C#)</p>
+            <hr class="panel-cover__divider panel-cover__divider--secondary" />
+    
+            <div class="navigation-wrapper">
+    
+              <nav class="cover-navigation cover-navigation--primary">
+                <ul class="navigation">
+                  <li class="navigation__item"><a href="http://blog.woehrl.net/#blog" title="link to woehrl.NET - Blog blog" class="blog-button">Blog</a></li>
+                </ul>
+              </nav>
+    
+              
+              
+              <nav class="cover-navigation navigation--social">
+                <ul class="navigation">
+              
+              
+                  <!-- Twitter -->
+                  <li class="navigation__item">
+                    <a href="@lwoehrl" title="Twitter account">
+                      <i class='icon icon-social-twitter'></i>
+                      <span class="label">Twitter</span>
+                    </a>
+                  </li>
+              
+              
+                  <!-- Github -->
+                  <li class="navigation__item">
+                    <a href="woehrl01" title="Github account">
+                      <i class='icon icon-social-github'></i>
+                      <span class="label">Github</span>
+                    </a>
+                  </li>
+                  </li>
+              
+              
+              
+              
+              
+              
+                </ul>
+              </nav>
+              
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+        <div class="panel-cover--overlay"></div>
+      </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            
+  <h1 class="archive-title">Tag: Sequential</h1>
+
+  <hr class="section-title__divider" />
+
+  <div class="main-post-list">
+
+    <ol class="post-list">
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="http://blog.woehrl.net/2015/03/22/Sequential-GUID-generation-for-SQLite.html" title="link to Sequential GUID generation for SQLite">Sequential GUID generation for SQLite</a></h2>
+        <p class="excerpt">Requires at least SQLite 3.8.3 or greater Can be used in DEFAULT expression (remember to suround with () parenthesis ) Based on an idea from Code Project: GUIDs as fast primary keys select    substr(printf('%014X', (strftime('%s', 'now') * 1000 + substr(strftime('%f','now'), 4, 3))), 3,&hellip;</p>
+        <div class="post-list__meta">
+            <time datetime="22 Mar 2015" class="post-list__meta--date date">22 Mar 2015</time> &#8226;
+            <span class="post-list__meta--tags tags"><a href="#blog" title="SQLite">SQLite</a>, <a href="#blog" title=" Sequential"> Sequential</a>, <a href="#blog" title=" GUID"> GUID</a></span>
+        </div>
+        <hr class="post-list__divider" />
+      </li>
+    </ol>
+
+    <hr class="post-list__divider " />
+
+<nav class="pagination" role="navigation">
+    <span class="pagination__page-number">Page 1 of 1</span>
+</nav>
+
+
+  </div>
+
+
+            <footer class="footer">
+                <span class="footer__copyright">&copy; 2015. All rights reserved.</span>
+                <span class="footer__copyright"><a href="http://uno.daleanthony.com" title="link to page for Uno Ghost theme">Uno theme</a> by <a href="http://daleanthony.com" title="link to website for Dale-Anthony">Dale-Anthony</a></span>
+                <span class="footer__copyright">Proudly published with <a href="http://hubpress.io" title="link to Hubpress website">Hubpress</a></span>
+            </footer>
         </div>
     </div>
-</header>
-
-<main class="content" role="main">
-
-    <div class="extra-pagination inner">
-        <nav class="pagination" role="navigation">
-        <span class="page-number">Page 1 of 1</span>
-    </nav>
-    </div>
-    
-    <article class="post tag-SQLite tag-Sequential tag-GUID">
-        <header class="post-header">
-            <h2 class="post-title"><a href="http://blog.woehrl.net/2015/03/22/Sequential-GUID-generation-for-SQLite.html">Sequential GUID generation for SQLite</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p>Requires at least SQLite 3.8.3 or greater Can be used in DEFAULT expression (remember to suround with () parenthesis ) Based on an idea from Code <a class="read-more" href="http://blog.woehrl.net/2015/03/22/Sequential-GUID-generation-for-SQLite.html">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            
-            
-             on <a href="http://blog.woehrl.net/tag/SQLite">SQLite</a>, <a href="http://blog.woehrl.net/tag/Sequential"> Sequential</a>, <a href="http://blog.woehrl.net/tag/GUID"> GUID</a>
-            <time class="post-date" datetime="2015-03-22">22 March 2015</time>
-        </footer>
-    </article>
-    
-    <nav class="pagination" role="navigation">
-        <span class="page-number">Page 1 of 1</span>
-    </nav>
-
-</main>
-
-
-    <footer class="site-footer clearfix">
-        <section class="copyright"><a href="http://blog.woehrl.net">woehrl.NET - Blog</a> &copy; 2015</section>
-        <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</a></section>
-    </footer>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
       <script type="text/javascript">
@@ -86,8 +154,8 @@
         hljs.initHighlightingOnLoad();      
       </script>
 
-    <script type="text/javascript" src="//blog.woehrl.net/themes/Casper/assets/js/jquery.fitvids.js?v=1.0.0"></script>
-    <script type="text/javascript" src="//blog.woehrl.net/themes/Casper/assets/js/index.js?v=1.0.0"></script>
+    <script type="text/javascript" src="//blog.woehrl.net/themes/uno/assets/js/main.js?v=1.0.0"></script>
+    
 
 </body>
 </html>
