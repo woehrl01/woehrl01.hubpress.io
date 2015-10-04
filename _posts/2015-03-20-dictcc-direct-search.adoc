@@ -1,0 +1,22 @@
+= dict.cc - direct search
+:published_at: 2015-03-20
+
+
+Folgender Link ist ein Lesezeichen für alle gängigen Browser (z.B. IE 6+, Chrome, Safari, Firefox und Opera).
+Damit ist es möglich einfach und schnell nach einem Wort unter dict.cc zu suchen. Ganz ohne Browserextension.
+
+image::http://www.thewoehrlside.de/images/content/dict_link.png[]
+
+So gehts:
+
+1. Link in die Lesezeichenleiste ziehen +
+link:javascript:(function(){if(window.getSelection)s=window.getSelection();else%20if(document.getSelection)s=document.getSelection();else%20if(document.selection)s=document.selection.createRange().text;if(s=='')s=prompt('Wort%20in%20Englisch/Deutsch:','');if(s!=null){w=open(('http://www.dict.cc/?s='+escape(s)),'w','location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=770,height=700,modal=yes,dependent=yes');if(w){setTimeout('w.focus()',1000);}else{location='http://www.dict.cc/?s='+escape(s)}}})();[dict.cc] <- diesen Link
+
+
+2. Wort auf einer Webseite markieren
+
+3. dict.cc-Lesezeichen aufrufen
+
+4. gesuchtes Wort eingeben (falls kein Wort markiert)
+
+Dieses Lesezeichen ist leicht erweiterbar und kann auch für andere Suchmaschinen genutzt werden.
