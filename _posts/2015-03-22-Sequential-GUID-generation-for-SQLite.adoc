@@ -4,9 +4,10 @@
 *Requires at least SQLite 3.8.3 or greater*
 
 
-Can be used in DEFAULT expression (remember to suround with `()` parenthesis )
+Based on an idea from link:http://www.codeproject.com/Articles/388157/GUIDs-as-fast-primary-keys-under-multiple-database[Code Project: GUIDs as fast primary keys] I tried to generate a sequential GUID purely in SQLite which can be used together with the other vendors. 
 
-Based on an idea from link:http://www.codeproject.com/Articles/388157/GUIDs-as-fast-primary-keys-under-multiple-database[Code Project: GUIDs as fast primary keys]
+As there is no native functionality to create GUID on SQLite. I optimized some link:http://sqlite.1065341.n5.nabble.com/how-do-i-generate-a-uniqueidentifier-td25769.html[suggestions] and add a seqential one.
+
 
 ----
 select
@@ -21,6 +22,9 @@ select
 
 from sqlite_master
 ----
+
+The snipped can also be used in a table creation script in the `DEAULT` expression (remember to suround the code with `()` parenthesis )
+
 
 == Hint: 
 ____
